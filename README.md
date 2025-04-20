@@ -15,8 +15,8 @@ pdflatex main.tex
 ## Screenshots
 
 <p align="center">
-    <img alt="Screenshot" src="https://github.com/MohamedRizki/MRizki-CV/main/jpg/CV_page_1.jpg" width="400">
-    <img alt="Screenshot" src="https://github.com/MohamedRizki/MRizki-CV/main/jpg/CV_page_2.jpg" width="400">
+    <img alt="Screenshot" src="https://github.com/MohamedRizki/MRizki-CV-French/blob/main/jpg/CV_page_1.jpg" width="400">
+    <img alt="Screenshot" src="https://github.com/MohamedRizki/MRizki-CV-French/blob/main/jpg/CV_page_2.jpg" width="400">
 </p>
 
 
