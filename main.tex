@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Mohamed RIZKI
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[french]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohamed RIZKI} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:33744720875}{+33 7 44 72 08 75}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:Mohamedrizki07@gmail.com}{Mohamedrizki07@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/mohamed-rizki-979b03104/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/MohamedRizki}{GitHub}
+    $|$
+    \faGlobe \hspace{.5pt} \href{https://mohamedrizki.github.io/Portfolio-Mohamed-RIZKI/}{Portfolio}
+    $|$
+    \faMapMarker \hspace{.5pt} Paris, France
+\end{center}
+
+
+Ingénieur géomaticien spécialisé en geo data science, avec une expérience académique et professionnelle à l'international. Passionné par la transition énergétique, les technologies géospatiales et l'innovation orientée données. À la recherche d'une opportunité en CDI pour mettre à profit mes compétences en développement géospatial, analyse de données spatiales et automatisation, au service de projets à fort impact dans les domaines de l’environnement, de l’énergie ou de l’intelligence urbaine.
+
+\section{Formation}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+  \resumeEducationHeading
+    {ENSG-Géomatique}{Paris, France}
+    {Diplôme d’ingénieur en géomatique – Filière : Data Science Géospatiale}{Sept. 2023 -- Sept. 2025}
+    {Projet de fin d’études : Amélioration du SIG du laboratoire ENGIE CRIGEN}{}
+
+  \resumeEducationHeading
+    {Institut Agronomique et Vétérinaire Hassan II}{Rabat, Maroc}
+    {Master en sciences et technologies de l'espace – Option : GNSS}{Sept. 2017 -- Sept. 2019}
+    {Projet de fin d’études : Intégration du GNSS et INS dans la la photogrammétrie érienne}{}
+
+  \resumeEducationHeading
+    {Faculté des Sciences Semlalia, Université Cadi Ayyad}{Marrakech, Maroc}
+    {Licence en sciences de la matière physique – Option : physique moderne}{Sept. 2014 -- Juin 2017}
+    {}{}
+\resumeSubHeadingListEnd
+
+
+\section{Expériences}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {ENGIE Lab CRIGEN }{Paris, France}
+    {Ingénieur SIG (alternance)}{Octobre. 2024 -- Octobre. 2025}
+    \resumeItemListStart
+      \resumeItem{Développement d’applications web SIG interactives via ArcGIS Experience Builder, Dashboards et Story Maps pour la visualisation d’indicateurs environnementaux et sociaux.}
+      \resumeItem{Création, gestion et stylisation de couches géographiques (ArcGIS Pro/Enterprise) ; publication de services, structuration de la base PostgreSQL + ArcSDE.}
+      \resumeItem{Développement de scripts Python pour automatiser le traitement, la mise en forme et la mise à jour de données spatiales et temporelles.}
+      \resumeItem{Exploration et intégration de sources de données climatiques, environnementales et sociétales pertinentes aux projets R\&D.}
+      \resumeItem{Appui aux utilisateurs internes : support technique, amélioration continue d’outils web et gestion des bugs.}
+      \resumeItem{Participation ponctuelle à des projets de machine learning (classification) et à la conception d’analyses spatiales innovantes.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {TERIA - EXAGONE}{Paris, France}
+    {Ingénieur GNSS (stage)}{Mai 2024 -- Septembre. 2024}
+    \resumeItemListStart
+      \resumeItem{Développement de scripts Python automatisant l’ingestion en temps réel de données GNSS via des flux TCP/IP (NTRIP/RTCM), avec des mécanismes de reprise sur erreur pour garantir la continuité et l’intégrité des données.}
+      \resumeItem{Conception et optimisation de bases de données spatiales PostgreSQL/PostGIS pour stocker les données.}
+      \resumeItem{Développement d'une API REST fournissant des indicateurs de qualité des stations GNSS situées à proximité de l'utilisateur.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Circet Maroc}{Casablanca, Maroc}
+    {Ingénieur FTTH / SIG (CDIs)}{Janvier. 2020 -- Août 2023}
+    \resumeItemListStart
+      \resumeItem{Cartographie les réseaux FTTH sur fond cadastral : saisie, projection, édition et mise en page des plans de déploiement et de réingénierie.}
+      \resumeItem{Modélisé les infrastructures (chambres, poteaux, boîtes, câbles, équipements actifs/passifs) dans des SIG (ArcGIS, QGIS, NetGeo), avec organisation des couches thématiques.}
+      \resumeItem{Intégré, nettoyé et harmonisé des données issues de plans AutoCAD, relevés terrain et bases clients pour générer des bases géospatiales exploitables.}
+      \resumeItem{Créé et maintenu des bases PostGIS avec structuration des couches réseau pour la consultation, l’analyse spatiale et l’édition cartographique.}
+      \resumeItem{Produit des cartes techniques et thématiques pour les phases d’étude, de déploiement, et de recette des réseaux (PDF, WebMaps, rapports carto).}
+      \resumeItem{Collaboré avec les équipes terrain et ingénierie pour assurer la cohérence entre données SIG et réalité terrain ; participé à la préparation des DOE.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Compétences}
+\vspace{2pt}
+\resumeSubHeadingListStart
+  \small{\item{
+    \textbf{Langages :} C++, Java, Python, JavaScript, MATLAB, R, HTML/CSS \\
+    \textbf{Technologies :} Qt, Flask, Node.js, React, MongoDB, PostgreSQL, Git, Docker, Linux \\
+    \textbf{Librairies :} ArcPy, PyQGIS, GeoPandas, Shapely, Rasterio, GDAL, NumPy, Pandas, Leaflet.js \\
+    \textbf{Outils SIG :} ArcGIS Pro, ArcGIS Enterprise, QGIS, FME, GeoServer, Experience Builder, PostGIS, AutoCAD
+  }}
+\resumeSubHeadingListEnd
+
+
+\section{Projets }
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+  \resumeItem{\textbf{IsoComp – Comparateur d’isochrones} \href{https://github.com/MohamedRizki/ISO-COMP}{(GitHub)}}
+  \resumeItemListStart
+    \resumeItem{Application web comparant les isochrones des API IGN, Mapbox, Here et Ciril Group à l'aide de Leaflet et Flask.}
+    \resumeItem{Analyse : couverture, précision, temps de réponse, distance de Hausdorff.}
+    \resumeItem{Technos : : Flask, GeoPandas, Shapely, Leaflet.js, FPDF, HTML/CSS, JavaScript, API REST}
+  \resumeItemListEnd
+
+  \resumeItem{\textbf{GeoEngie – Librairie d’automatisation ArcGIS} \href{https://github.com/MohamedRizki/Geo-ENGIE}{(GitHub)}}
+  \resumeItemListStart
+    \resumeItem{Bibliothèque Python simplifiant les tâches répétitives d'ArcGIS Pro via ArcPy.}
+    \resumeItem{Technos : Python, ArcPy, ArcGIS Pro}
+  \resumeItemListEnd
+
+  \resumeItem{\textbf{API de qualification des données GNSS en temps réel} \href{https://github.com/MohamedRizki/GNSS-Quality-API}{(GitHub)}}
+  \resumeItemListStart
+    \resumeItem{API fournissant aux utilisateurs des indicateurs de qualité des stations GNSS en temps réel, basés sur des messages GNGGA en temps réel.}
+    \resumeItem{Technos : Flask, Socket.IO, PostgreSQL/PostGIS, Python (Pyproj, Geopy, psycopg2).}
+  \resumeItemListEnd
+
+  \resumeItem{\textbf{Généalogie Localisée} \href{https://github.com/MohamedRizki/GenealogieLocalisee}{(GitHub)}}
+  \resumeItemListStart
+    \resumeItem{Formulaire PHP/JS pour collecter des données familiales et cartographier l’arbre généalogique.}
+    \resumeItem{Technos : PHP, FlightPHP, JavaScript, Leaflet.js, MySQL, HTML/CSS}
+  \resumeItemListEnd
+
+  \resumeItem{\textbf{Widget ArcGIS – Liste déroulante des couches} \href{https://github.com/MohamedRizki/Drop-Down-List-Of-Layers}{(GitHub)}}
+  \resumeItemListStart
+    \resumeItem{Widget React pour lister dynamiquement les couches d’une carte Web (Experience Builder).}
+    \resumeItem{Technos : React, TypeScript, ArcGIS Experience Builder SDK, JavaScript}
+  \resumeItemListEnd
+
+  \resumeItem{\textbf{EasyExport – Export PDF QGIS} \href{https://github.com/MohamedRizki/EasyExport}{(GitHub)}}
+  \resumeItemListStart
+    \resumeItem{Script Python pour export de mises en page QGIS avec gestion du chevauchement et de l’étendue.}
+    \resumeItem{Technologies: Python, PyQGIS}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Langues et Centres d’intérêt}
+\vspace{3pt}
+\resumeSubHeadingListStart
+  \item{\textbf{Langues :} Tamazight / Arabe (langue maternelle), Français (C1), Anglais (B2)}
+  \item{\textbf{Loisirs :} Boxe, course à pied, datavisualisation, intelligence géospatiale}
+\resumeSubHeadingListEnd
+
+\end{document}
