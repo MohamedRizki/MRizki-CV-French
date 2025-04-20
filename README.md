@@ -2,7 +2,7 @@
 
 Mon curriculum vitae (CV) rédigé en LaTeX. Dans mon CV, vous trouverez mes informations de contact, mes sites web, ma formation, mon expérience, mes réalisations, mes projets et mes compétences.
 
-Veuillez trouver mon [CV](https://drive.google.com/file/d/1HXuSvjNoK01b0tCGdloEsg27sjadt2TC/view?usp=sharing) en pièce jointe. 😜
+Veuillez trouver mon [CV](https://drive.google.com/file/d/1HXuSvjNoK01b0tCGdloEsg27sjadt2TC/view?usp=sharing) en pièce jointe.
 
 ## Exécution dans le Terminal
 
