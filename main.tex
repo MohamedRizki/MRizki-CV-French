@@ -15,18 +15,32 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[french]{babel}
+\usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \input{glyphtounicode}
 
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -34,21 +48,28 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
+% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
+% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
 
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
+
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
@@ -57,6 +78,15 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 
 \newcommand{\resumeEducationHeading}[6]{
   \vspace{-2pt}\item
@@ -67,10 +97,34 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%ssy
 
 \begin{document}
 
@@ -169,38 +223,38 @@ Ingénieur géomaticien spécialisé en geo data science, avec une expérience a
 \vspace{3pt}
 \resumeSubHeadingListStart
 
-  \resumeItem{\textbf{IsoComp – Comparateur d’isochrones} \href{https://github.com/MohamedRizki/ISO-COMP}{(GitHub)}}
+  \resumeItem{\textbf{IsoComp – Comparateur d’isochrones} \href{https://github.com/MohamedRizki/ISO-COMP}{({\color{blue}GitHub})}}
   \resumeItemListStart
     \resumeItem{Application web comparant les isochrones des API IGN, Mapbox, Here et Ciril Group à l'aide de Leaflet et Flask.}
     \resumeItem{Analyse : couverture, précision, temps de réponse, distance de Hausdorff.}
     \resumeItem{Technos : Flask, GeoPandas, Shapely, Leaflet.js, FPDF, HTML/CSS, JavaScript, API REST.}
   \resumeItemListEnd
 
-  \resumeItem{\textbf{GeoEngie – Librairie d’automatisation ArcGIS} \href{https://github.com/MohamedRizki/Geo-ENGIE}{(GitHub)}}
+  \resumeItem{\textbf{GeoEngie – Librairie d’automatisation ArcGIS} \href{https://github.com/MohamedRizki/Geo-ENGIE}{({\color{blue}GitHub})}}
   \resumeItemListStart
     \resumeItem{Bibliothèque Python simplifiant les tâches répétitives d'ArcGIS Pro via ArcPy.}
     \resumeItem{Technos : Python, ArcPy, ArcGIS Pro.}
   \resumeItemListEnd
 
-  \resumeItem{\textbf{API de qualification des données GNSS en temps réel} \href{https://github.com/MohamedRizki/GNSS-Quality-API}{(GitHub)}}
+  \resumeItem{\textbf{API de qualification des données GNSS en temps réel} \href{https://github.com/MohamedRizki/GNSS-Quality-API}{({\color{blue}GitHub})}}
   \resumeItemListStart
     \resumeItem{API fournissant aux utilisateurs des indicateurs de qualité des stations GNSS en temps réel, basés sur des messages RTCM en temps réel.}
     \resumeItem{Technos : Flask, Socket.IO, PostgreSQL/PostGIS, Python (Pyproj, Geopy, psycopg2).}
   \resumeItemListEnd
 
-  \resumeItem{\textbf{Généalogie Localisée} \href{https://github.com/MohamedRizki/GenealogieLocalisee}{(GitHub)}}
+  \resumeItem{\textbf{Généalogie Localisée} \href{https://github.com/MohamedRizki/GenealogieLocalisee}{({\color{blue}GitHub})}}
   \resumeItemListStart
     \resumeItem{Formulaire PHP/JS pour collecter des données familiales et cartographier l’arbre généalogique.}
     \resumeItem{Technos : PHP, FlightPHP, JavaScript, Leaflet.js, MySQL, HTML/CSS.}
   \resumeItemListEnd
 
-  \resumeItem{\textbf{Widget ArcGIS – Liste déroulante des couches} \href{https://github.com/MohamedRizki/Drop-Down-List-Of-Layers}{(GitHub)}}
+  \resumeItem{\textbf{Widget ArcGIS – Liste déroulante des couches} \href{https://github.com/MohamedRizki/Drop-Down-List-Of-Layers}{({\color{blue}GitHub})}}
   \resumeItemListStart
     \resumeItem{Widget React pour lister dynamiquement les couches d’une carte Web (Experience Builder).}
     \resumeItem{Technos : React, TypeScript, ArcGIS Experience Builder SDK, JavaScript.}
   \resumeItemListEnd
 
-  \resumeItem{\textbf{EasyExport – Export PDF QGIS} \href{https://github.com/MohamedRizki/EasyExport}{(GitHub)}}
+  \resumeItem{\textbf{EasyExport – Export PDF QGIS} \href{https://github.com/MohamedRizki/EasyExport}{({\color{blue}GitHub})}}
   \resumeItemListStart
     \resumeItem{Script Python pour export de mises en page QGIS avec gestion du chevauchement et de l’étendue.}
     \resumeItem{Technos: Python, PyQGIS.}
@@ -212,28 +266,6 @@ Ingénieur géomaticien spécialisé en geo data science, avec une expérience a
 \vspace{3pt}
 \resumeSubHeadingListStart
   \item{\textbf{Langues :} Tamazight / Arabe (langue maternelle), Français (TCF - C1), Anglais (TOEIC - B2)}
-  \item{\textbf{Loisirs :} Boxe, course à pied, datavisualisation, intelligence géospatiale}
-\resumeSubHeadingListEnd
-
-\end{document}
-  \resumeItem{\textbf{Widget ArcGIS – Liste déroulante des couches} \href{https://github.com/MohamedRizki/Drop-Down-List-Of-Layers}{(GitHub)}}
-  \resumeItemListStart
-    \resumeItem{Widget React pour lister dynamiquement les couches d’une carte Web (Experience Builder).}
-    \resumeItem{Technos : React, TypeScript, ArcGIS Experience Builder SDK, JavaScript}
-  \resumeItemListEnd
-
-  \resumeItem{\textbf{EasyExport – Export PDF QGIS} \href{https://github.com/MohamedRizki/EasyExport}{(GitHub)}}
-  \resumeItemListStart
-    \resumeItem{Script Python pour export de mises en page QGIS avec gestion du chevauchement et de l’étendue.}
-    \resumeItem{Technologies: Python, PyQGIS}
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-\section{Langues et Centres d’intérêt}
-\vspace{3pt}
-\resumeSubHeadingListStart
-  \item{\textbf{Langues :} Tamazight / Arabe (langue maternelle), Français (C1), Anglais (B2)}
   \item{\textbf{Loisirs :} Boxe, course à pied, datavisualisation, intelligence géospatiale}
 \resumeSubHeadingListEnd
 
